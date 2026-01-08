@@ -10,15 +10,18 @@ export default function HomePage() {
         </p>
 
         <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
-          Hi, I&apos;m <span className="text-indigo-400">Jordan Brockbank</span>.
+          Hi, I&apos;m <span className="text-indigo-400">Jordan Brockbank</span>
+          .
           <br />
-          <span className="text-slate-100">
-            Short intro - 1 sentence
-          </span>
+          <span className="text-slate-100">I build wep apps and software.</span>
         </h1>
 
         <p className="text-base text-slate-300 sm:text-lg">
-          Bio Here
+          I am a graduating computer science student at Brigham Young
+          University. I am 24 years old and have a passion for building things
+          and solving problems through code. My main experience in the workforce
+          has been in full-stack web development, but I also enjoy exploring
+          other areas of software development.
         </p>
 
         <div className="flex flex-wrap gap-3">
@@ -55,7 +58,9 @@ export default function HomePage() {
       {/* Latest project */}
       <section>
         <div className="flex items-baseline justify-between">
-          <h2 className="text-xl font-semibold text-slate-100">Latest project</h2>
+          <h2 className="text-xl font-semibold text-slate-100">
+            Latest project
+          </h2>
           <Link
             href="/projects"
             className="text-sm text-indigo-300 hover:text-indigo-200"
@@ -65,12 +70,8 @@ export default function HomePage() {
         </div>
 
         <div className="mt-4 rounded-lg border border-slate-800 bg-slate-900/60 p-5">
-          <h3 className="text-lg font-semibold text-slate-100">
-            CFB 
-          </h3>
-          <p className="mt-2 text-sm text-slate-300">
-            Description
-          </p>
+          <h3 className="text-lg font-semibold text-slate-100">CFB</h3>
+          <p className="mt-2 text-sm text-slate-300">Description</p>
           <p className="mt-3 text-xs uppercase tracking-wide text-slate-400">
             What · was · used placeholder
           </p>

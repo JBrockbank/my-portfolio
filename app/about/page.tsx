@@ -22,8 +22,8 @@ export default function AboutPage() {
           first at the help desk troubleshooting hardware/software, then on the
           Web Development team building/maintaining apps with Next.js, Typescript, React,
           and C# with PostgreSQL and MySQL databases. Shortly after being hired, I was promoted
-          to team lead. As such, I oversaw student devs, managed projects, and
-          mentored on deadlines/quality—honing my leadership and collaboration
+          to team lead. As such, I oversee student devs, manag projects, and
+          mentor on deadlines/quality—building my leadership, collaboration, and communication
           skills.
         </p>
       </section>

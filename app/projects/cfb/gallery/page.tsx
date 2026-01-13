@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import Lightbox from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css";
+import dynamic from "next/dynamic";
+// import "yet-another-react-lightbox/styles.css";
 
 const images = [
   { src: "/cfb/home.png", alt: "Home screen" },
@@ -13,6 +13,11 @@ const images = [
   { src: "/cfb/rankings.png", alt: "Rankings page" },
   { src: "/cfb/map.png", alt: "FBS Map page" },
 ];
+
+const Lightbox = dynamic(
+  () => import("yet-another-react-lightbox"),
+  { ssr: false }
+);
 
 export default function CFBGallery() {
   const [lightboxOpen, setLightboxOpen] = useState(false);

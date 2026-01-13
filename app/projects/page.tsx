@@ -15,17 +15,19 @@ export default function ProjectsPage() {
 
       <section className="space-y-4">
         <ProjectAccordionItem
-          title="CFB Analytics Toolkit"
+          title="CFB"
           languages={[
-            { name: "Python", percent: 68, color: "#ff7b72" },
-            { name: "Jupyter Notebook", percent: 22, color: "#f37626" },
-            { name: "Shell", percent: 6, color: "#89e051" },
-            { name: "Dockerfile", percent: 4, color: "#384d54" },
+            { name: "Typescript", percent: 71, color: "#ff7b72" },
+            { name: "C#", percent: 21, color: "#f37626" },
+            { name: "Javascript", percent: 7, color: "#89e051" },
+            { name: "CSS", percent: 0.3, color: "#384d54" },
           ]}
-          summary="Command-line toolkit for college football drive analysis."
-          details="Ingests NCAA play-by-play CSV → validates schemas → computes EPA/drive, success rate, explosive plays → SQLite export."
-          tech="Python · Pandas · SQLite · GitHub Actions"
+          summary="Personal Project: A web application that combines a season-long college football imperialism game with a rich data hub for fans."
+          details="A custom hub for college football fans featuring a custom imperialism game with persistent leagues, a scoreboard dashboard showing all games and live scores, team history pages, and a map of all FBS teams. Built with a Next.js frontend, C# ASP.NET backend, CFB Data API for the data, and MongoDB database."
+          wip="Work in progress: Automated pipeline for updating imperialism data weekly during the season. Adding user profiles and social features. Improving mobile responsiveness. Live hosting and deployment."
+          tech="Next.js · React · MongoDB · ASP.NET"
           codeUrl="https://github.com/jbrockbank/cfb"
+          galleryUrl="/projects/cfb/gallery"
         />
 
         <ProjectAccordionItem

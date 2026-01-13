@@ -1,9 +1,9 @@
+import { ProjectAccordionItem } from "@/components/ProjectAccordionItem";
 import Link from "next/link";
 
 export default function HomePage() {
   return (
     <main className="space-y-10">
-      {/* Hero */}
       <section className="space-y-6">
         <p className="inline-flex items-center rounded-full border border-slate-700 bg-slate-900/60 px-3 py-1 text-xs font-medium text-slate-300">
           Graduating CS student · BYU · 2026
@@ -13,15 +13,15 @@ export default function HomePage() {
           Hi, I&apos;m <span className="text-indigo-400">Jordan Brockbank</span>
           .
           <br />
-          <span className="text-slate-100">I build wep apps and software.</span>
+          <span className="text-slate-100">Software Developer.</span>
         </h1>
 
         <p className="text-base text-slate-300 sm:text-lg">
           I am a graduating computer science student at Brigham Young
           University. I am 24 years old and have a passion for building things
-          and solving problems through code. My main experience in the workforce
-          has been in full-stack web development, but I also enjoy exploring
-          other areas of software development.
+          and solving problems through programming. My main experience in the
+          workforce has been in full-stack web development, but I also enjoy
+          exploring other areas of software development.
         </p>
 
         <div className="flex flex-wrap gap-3">
@@ -31,12 +31,14 @@ export default function HomePage() {
           >
             View all projects
           </Link>
-          <a
+          <Link
             href="/Jordan-Brockbank-Resume.pdf"
+            target="_blank"
+            download="Jordan-Brockbank-Resume.pdf"
             className="inline-flex items-center justify-center rounded-md border border-slate-700 px-5 py-2.5 text-sm font-semibold text-slate-100 hover:border-slate-500 hover:bg-slate-900/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
           >
-            Download resume
-          </a>
+          Download Resume
+          </Link>
         </div>
 
         <dl className="mt-4 grid gap-4 text-sm text-slate-300 sm:grid-cols-3">
@@ -55,7 +57,6 @@ export default function HomePage() {
         </dl>
       </section>
 
-      {/* Latest project */}
       <section>
         <div className="flex items-baseline justify-between">
           <h2 className="text-xl font-semibold text-slate-100">
@@ -69,7 +70,7 @@ export default function HomePage() {
           </Link>
         </div>
 
-        <div className="mt-4 rounded-lg border border-slate-800 bg-slate-900/60 p-5">
+        {/* <div className="mt-4 rounded-lg border border-slate-800 bg-slate-900/60 p-5">
           <h3 className="text-lg font-semibold text-slate-100">CFB</h3>
           <p className="mt-2 text-sm text-slate-300">Description</p>
           <p className="mt-3 text-xs uppercase tracking-wide text-slate-400">
@@ -83,6 +84,22 @@ export default function HomePage() {
               View code
             </Link>
           </div>
+        </div> */}
+        <div>
+          <ProjectAccordionItem
+            title="CFB"
+            languages={[
+              { name: "Typescript", percent: 71, color: "#ff7b72" },
+              { name: "C#", percent: 20, color: "#ff7b72" },
+              { name: "MongoDB", percent: 9, color: "#ff7b72" },
+            ]}
+            summary="Personal Project: A web application that combines a season-long college football imperialism game with a rich data hub for fans."
+            details="A custom hub for college football fans featuring a custom imperialism game with persistent leagues, a scoreboard dashboard showing all games and live scores, team history pages, and a map of all FBS teams. Built with a Next.js frontend, C# ASP.NET backend, CFB Data API for the data, and MongoDB database."
+            tech="Next.js · React · MongoDB · ASP.NET"
+            codeUrl="https://github.com/jbrockbank/cfb"
+            expanded={true}
+            galleryUrl="/projects/cfb/gallery"
+          />
         </div>
       </section>
     </main>

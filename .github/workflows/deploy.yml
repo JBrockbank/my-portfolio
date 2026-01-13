@@ -31,7 +31,11 @@ jobs:
 
       - name: Build with Next.js
         run: npm run build
-
+      - name: Assert Pages-ready output
+        run: |
+              test -f out/index.html
+              grep -R "window is not defined" -n .next || true
+              
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

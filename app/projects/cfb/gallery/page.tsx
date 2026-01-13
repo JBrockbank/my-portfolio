@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Image from "next/image";
 import dynamic from "next/dynamic";
-// import "yet-another-react-lightbox/styles.css";
 
 const images = [
   { src: "/cfb/home.png", alt: "Home screen" },

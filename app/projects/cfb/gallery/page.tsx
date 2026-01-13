@@ -1,5 +1,5 @@
 "use client";
-
+import "yet-another-react-lightbox/styles.css";
 import { useState } from "react";
 import Image from "next/image";
 import dynamic from "next/dynamic";
@@ -60,14 +60,27 @@ export default function CFBGallery() {
       </main>
 
       <Lightbox
-        open={lightboxOpen}
-        close={() => setLightboxOpen(false)}
-        slides={images}
-        index={lightboxIndex}
-        on={{
-          view: ({ index: current }) => setLightboxIndex(current),
+  open={lightboxOpen}
+  close={() => setLightboxOpen(false)}
+  index={lightboxIndex}
+  slides={images.map((img) => ({
+    src: img.src,
+    alt: img.alt,
+  }))}
+  render={{
+    slide: ({ slide }) => (
+      <img
+        src={slide.src}
+        alt={slide.alt}
+        style={{
+          maxWidth: "100%",
+          maxHeight: "100%",
+          objectFit: "contain",
         }}
       />
+    ),
+  }}
+/>
     </>
   );
 }

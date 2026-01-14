@@ -14,7 +14,7 @@ export function SidebarColumn() {
       <SidebarCard />
         <div className="mt-2 h-65 w-60 relative overflow-hidden rounded-xl ring-2 ring-slate-800">
           <Image
-            src="/me.jpg"
+            src="/me.JPG"
             alt="Photo of Jordan Brockbank"
             fill
             className="object-cover"

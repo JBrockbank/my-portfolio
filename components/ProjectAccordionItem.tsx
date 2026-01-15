@@ -122,7 +122,7 @@ export function ProjectAccordionItem({
             {galleryUrl && (
               <Link
                 href={galleryUrl}
-                target="_blank"
+                target="_self" 
                 rel="noopener noreferrer"
                 className="group flex items-center gap-2 text-pink-400 hover:text-pink-300 transition-all font-semibold text-sm py-2.5 px-4 border-2 border-pink-400/40 bg-pink-500/10 rounded-xl hover:bg-pink-500/20 hover:border-pink-400/70 hover:shadow-lg hover:shadow-pink-500/25 hover:-translate-y-0.5"
               >
@@ -143,7 +143,7 @@ export function ProjectAccordionItem({
               </Link>
             )}
 
-            {liveUrl && (
+            {/* {liveUrl && (
               <Link
                 href={liveUrl}
                 target="_blank"
@@ -165,7 +165,7 @@ export function ProjectAccordionItem({
                   />
                 </svg>
               </Link>
-            )}
+            )} */}
           </div>
         </div>
       </div>

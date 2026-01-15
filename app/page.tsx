@@ -44,11 +44,11 @@ export default function HomePage() {
         <dl className="mt-4 grid gap-4 text-sm text-slate-300 sm:grid-cols-3">
           <div>
             <dt className="font-medium text-slate-200">Focus</dt>
-            <dd>Other cool stuff · Like · Full‑stack</dd>
+            <dd>Full-stack development · Web applications · Systems programming</dd>
           </div>
           <div>
             <dt className="font-medium text-slate-200">Tools</dt>
-            <dd>Add · Tools · Next.js · Here</dd>
+            <dd>Next.js · React · C#/.NET · PostgreSQL · TypeScript</dd>
           </div>
           <div>
             <dt className="font-medium text-slate-200">Location</dt>
@@ -69,22 +69,8 @@ export default function HomePage() {
             View all projects
           </Link>
         </div>
+        <br />
 
-        {/* <div className="mt-4 rounded-lg border border-slate-800 bg-slate-900/60 p-5">
-          <h3 className="text-lg font-semibold text-slate-100">CFB</h3>
-          <p className="mt-2 text-sm text-slate-300">Description</p>
-          <p className="mt-3 text-xs uppercase tracking-wide text-slate-400">
-            What · was · used placeholder
-          </p>
-          <div className="mt-4 flex gap-3 text-sm">
-            <Link
-              href="https://github.com/jbrockbank/cfb"
-              className="text-indigo-300 hover:text-indigo-200"
-            >
-              View code
-            </Link>
-          </div>
-        </div> */}
         <div>
           <ProjectAccordionItem
             title="CFB"

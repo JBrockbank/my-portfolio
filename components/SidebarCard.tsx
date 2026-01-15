@@ -4,12 +4,12 @@ export function SidebarCard() {
   return (
     <aside className="w-full max-w-sm rounded-xl border border-slate-800 bg-slate-900/60 p-5 shadow-lg">
       <h2 className="text-sm font-semibold text-slate-200">
-        What you&apos;ll find here
+        Portfolio Overview
       </h2>
       <ul className="mt-4 space-y-3 text-sm text-slate-300">
-        <li>• Concise write‑ups of selected school and personal projects.</li>
-        <li>• Systems and networking work in C, plus full‑stack Next.js apps.</li>
-        <li>• Occasional notes on debugging, performance, and tech ethics.</li>
+        <li>• Technical projects from coursework and independent development</li>
+        <li>• Professional background and technical skills</li>
+        <li>• Contact information</li>
       </ul>
 
       <div className="mt-6 flex flex-wrap gap-3 text-sm">

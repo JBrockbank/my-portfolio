@@ -9,13 +9,13 @@ export default function ProjectsPage() {
         </h1>
         <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-indigo-300 rounded-full mx-auto" />
       </header>
-        <p className="text-sm text-slate-300 max-w-2xl">
-          Click to expand projects. School, systems programming, and personal projects from CS coursework.
-        </p>
+      <p className="text-sm text-slate-300 max-w-2xl">
+        Click to expand projects. Combination of personal and school projects. Galleries showcase more images where available.
+      </p>
 
       <section className="space-y-4">
         <ProjectAccordionItem
-          title="CFB"
+          title="CFB 🏈"
           languages={[
             { name: "Typescript", percent: 71, color: "#ff7b72" },
             { name: "C#", percent: 21, color: "#f37626" },
@@ -31,72 +31,32 @@ export default function ProjectsPage() {
         />
 
         <ProjectAccordionItem
-          title="TCP Chat Server"
+          title="Chess Project ♟️"
           languages={[
-            { name: "C", percent: 92, color: "#a8b9cc" },
-            { name: "Makefile", percent: 5, color: "#8957a8" },
-            { name: "Dockerfile", percent: 3, color: "#384d54" },
+            { name: "Java", percent: 97, color: "#a8b9cc" },
+            { name: "HTML", percent: 1.6, color: "#8957a8" },
+            { name: "Other", percent: 1.2, color: "#384d54" },
           ]}
-          summary="Concurrent multi-client chat server (CS 324)."
-          details="POSIX sockets + epoll event loop, channels, basic auth, handles 20+ clients with clean shutdowns."
-          tech="C · POSIX sockets · epoll · Docker"
-          codeUrl="https://github.com/jbrockbank/tcp-chat"
+          summary="School project: A CLI-based chess server and client application."
+          details="CLI-based chess platform with a networked client/server architecture supporting multiple concurrent games and authenticated player sessions. The server exposes HTTP and WebSocket endpoints, persists users and games in a MySQL database, and supports reconnecting to in-progress matches. Designed to highlight clean software architecture, robust serialization, database persistence, unit testing, and secure login flows."
+          tech="Java · HTTP · WebSocket · MySQL · JUnit"
+          codeUrl="https://github.com/jbrockbank/chess"
+          wip="Work in progress: Implementing a web-based frontend using React. Adding AI opponent. "
+          galleryUrl="/projects/chess/gallery"
         />
 
         <ProjectAccordionItem
-          title="Developer Portfolio"
+          title="Tweeter - Social Media Platform 🐦"
           languages={[
-            { name: "TypeScript", percent: 65, color: "#3178c6" },
-            { name: "JavaScript", percent: 20, color: "#f1e05a" },
-            { name: "CSS", percent: 10, color: "#563d7c" },
-            { name: "JSON", percent: 5, color: "#5d90cd" },
+            { name: "TypeScript", percent: 95, color: "#a8b9cc" },
+            { name: "CSS", percent: 2, color: "#8957a8" },
           ]}
-          summary="This portfolio site you're viewing."
-          details="Next.js 15 app router + Tailwind CSS, responsive design, semantic HTML, optimized for performance."
-          tech="Next.js · TypeScript · Tailwind · Vercel"
-          codeUrl="https://github.com/jbrockbank/portfolio"
-          liveUrl="https://your-portfolio.com"
+          summary="School Project: Full-stack social media platform rebuilt from educational template."
+          details="Refactored monolithic starter code into production-ready social platform with real user auth, dynamic feeds, friend networks, and full post CRUD. Consolidated multiple similar components into a few base components using render props and custom hooks, and eliminating all code duplication. Added infinite scroll, proper error handling, loading states, and responsive design."
+          tech="React · TypeScript · Custom Hooks · Render Props"
+          codeUrl="https://github.com/jbrockbank/tweeter"
         />
 
-        <ProjectAccordionItem
-          title="Concurrent Job Scheduler"
-          languages={[
-            { name: "C", percent: 95, color: "#a8b9cc" },
-            { name: "Makefile", percent: 5, color: "#8957a8" },
-          ]}
-          summary="Unix-style background job manager (CS 324)."
-          details="pthreads concurrency, process groups, SIGCHLD handling, priority queues, TUI monitor interface."
-          tech="C · pthreads · Signals · Unix APIs"
-          codeUrl="https://github.com/jbrockbank/job-scheduler"
-        />
-
-        <ProjectAccordionItem
-          title="Network Packet Sniffer"
-          languages={[
-            { name: "C", percent: 88, color: "#a8b9cc" },
-            { name: "Python", percent: 8, color: "#ff7b72" },
-            { name: "Makefile", percent: 4, color: "#8957a8" },
-          ]}
-          summary="libpcap packet analyzer with protocol dissection."
-          details="Live capture + offline pcap parsing, TCP/UDP/ICMP dissection, real-time stats dashboard."
-          tech="C · libpcap · pthreads · ncurses"
-          codeUrl="https://github.com/jbrockbank/packet-sniffer"
-        />
-
-        <ProjectAccordionItem
-          title="Task Manager API"
-          languages={[
-            { name: "TypeScript", percent: 55, color: "#3178c6" },
-            { name: "SQL", percent: 25, color: "#f1e05a" },
-            { name: "JavaScript", percent: 15, color: "#563d7c" },
-            { name: "Dockerfile", percent: 5, color: "#384d54" },
-          ]}
-          summary="REST API + React dashboard for task management."
-          details="PostgreSQL + Express server, JWT auth, React frontend, Docker compose deployment."
-          tech="Next.js · PostgreSQL · Prisma · Docker"
-          codeUrl="https://github.com/jbrockbank/task-manager"
-          liveUrl="https://tasks.jordanbrockbank.com"
-        />
       </section>
     </main>
   );
